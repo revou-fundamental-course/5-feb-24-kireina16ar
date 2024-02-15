@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(rgba(94, 144, 172, 0.9), rgba(210, 231, 239, 0.9)) no-repeat center center fixed;
+    background-size: cover;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .calculator {
+    padding: 60px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  input, select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #95a5a6;
+    border-radius: 6px;
+  }
+
+  h2 {
+    font-size: 28px;
+    color: #1a4f72;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    position: relative;
+    padding: 12px 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #42596d;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #c3d9eb;
+  }
+
+  #conversion-explanation {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #42596d;
+    color: #fff;
+    border-radius: 15px; 
+    cursor: pointer;
+  }
+
+  #conversion-explanation p {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+  }
+
+  #conversion-explanation:hover {
+    background-color: #c3d9eb;
+  }
+  
+  #result-container {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  #result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .conversion-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 2px solid #bdc3c7;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #ecf0f1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .calculator {
+      padding: 20px;
+    }
+  }
+  

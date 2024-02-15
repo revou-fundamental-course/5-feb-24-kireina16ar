@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Suhu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="calculator">
+    <h2 style="text-align: center;">Konversi Suhu</h2>
+    <p style="text-align: justify;">
+        Selamat datang di Website Konversi Suhu. Temukan kemudahan konversi suhu dari satu satuan ke satuan lain dengan cepat dan praktis.
+    </p>      
+    <div id="conversion-explanation">
+      <a href="about.html" style="text-decoration: none;">
+        <p>Rumus Konversi Suhu</p>
+      </a>
+    </div>
+
+    <form id="temperature-form">
+      <div class="input-group">
+        <label for="temperature">Masukkan Suhu:</label>
+        <input type="number" id="temperature" placeholder="Masukkan suhu" required>
+      </div>
+
+      <div class="input-group">
+        <label for="unit">Pilih Unit:</label>
+        <select id="unit">
+          <option value="celsius">Celcius (°C) ke Fahrenheit (°F)</option>
+          <option value="fahrenheit">Fahrenheit (°F) ke Celcius (°C)</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="convert()">Konversi</button>
+        <button type="button" onclick="reset()">Reset</button>
+        <button type="button" onclick="reverse()">Reverse</button>
+      </div>
+    </form>
+
+    <div class="result">
+        <h3>Hasil Konversi:</h3>
+        <div id="result-container">
+          <p id="result"></p>
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
